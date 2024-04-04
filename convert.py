@@ -1,7 +1,7 @@
 import requests
-import pyshorteners
+import pyshortners
 
-s = pyshorteners.Shortener()
+s = pyshortners.Shortener()
 
 
 def download_terabox_video(url, shorturl, password=None):
