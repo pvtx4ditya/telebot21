@@ -47,8 +47,8 @@ def check_forwarded(message):
       time.sleep(2)
       vid = open("video.mp4", "rb")
       bot.send_video(message.chat.id, vid)
-except:
-    bot.send_message(message.chat.id, "NO URL FOUND")
+  except:
+      bot.send_message(message.chat.id, "NO URL FOUND")
 
 
 while True:
