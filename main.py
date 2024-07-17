@@ -38,7 +38,7 @@ def link(message):
 @bot.message_handler(content_types=['text'])
 def check_forwarded(message):
   try:
-      link = message.text.split(" ")[-1].split("/")[-1].replace(" ", "")
+      link = message.text.replace(" ", "")
       resp = download_terabox_video("https://terabox.hnn.workers.dev", link,
                                     None).replace(" ", "")
       bot.send_message(message.chat.id, resp)
